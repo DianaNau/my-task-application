@@ -1,59 +1,18 @@
-# MyTasksApp
+# My Tasks App 📝  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+Hey! 👋 Ich bin Diana und das ist mein erstes Angular-Projekt.  
+Mit dieser App lassen sich Aufgaben ganz einfach verwalten – man kann sie hinzufügen, als erledigt markieren, löschen und nach Status filtern (Alle, Erledigt, Offen). Die Daten werden dabei im Local Storage gespeichert, sodass auch nach dem Neuladen der Seite nichts verloren geht.  
 
-## Development server
+Das Projekt wurde mit Angular (Standalone-Komponenten), TypeScript, HTML und CSS umgesetzt. Besonderen Wert habe ich auf eine klare Struktur, ein responsives Design und eine gute Benutzerfreundlichkeit gelegt. Die Oberfläche passt sich automatisch an Desktop- und Mobilgeräte an.
 
-To start a local development server, run:
+Ich habe dieses Projekt im Rahmen einer Coding Challenge zur Vorbereitung auf ein Praktikum bei der Firma Serviceware entwickelt – deshalb habe ich auch das Logo in das Design eingebunden, um einen persönlichen Bezug zu schaffen.
 
-```bash
-ng serve
-```
+Die Anwendung ist in zwei Komponenten aufgeteilt:  
+Eine zum Hinzufügen neuer Aufgaben (`AddTaskComponent`) und eine zur Anzeige und Verwaltung der Aufgabenliste (`TaskListComponent`). Die Logik zur Datenverarbeitung befindet sich im `TaskService`, wo alle Aufgaben zentral gespeichert, aktualisiert und mit einem `BehaviorSubject` an die UI weitergegeben werden.  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Die Filterfunktion ermöglicht es, zwischen allen, erledigten und offenen Aufgaben zu wechseln. Dabei wird die jeweils gefilterte Liste dynamisch angepasst. Für die Speicherung verwende ich ausschließlich den Local Storage – ohne Datenbank oder Backend.
 
-## Code scaffolding
+Ich habe dieses Projekt genutzt, um Angular von Grund auf besser zu verstehen. Es war mir wichtig, etwas Eigenes zu bauen, das nicht nur technisch funktioniert, sondern auch visuell einen sauberen und aufgeräumten Eindruck macht.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Vielen Dank für die Challenge! 😄
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
